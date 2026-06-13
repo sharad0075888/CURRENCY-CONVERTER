@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Select2 -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+  rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Theme Button -->
+    <button class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- Title -->
+    <h1>Currency Converter</h1>
+
+    <!-- Amount -->
+    <div class="amount-box">
+
+        <label>Enter Amount</label>
+
+        <input
+        type="number"
+        class="amount"
+        value=""
+        min="">
+
+        
+
+    </div>
+
+    <!-- Currency Box -->
+    <div class="currency-box">
+
+        <!-- From -->
+        <div class="from">
+
+            <p>
+                <i class="fa-solid fa-dollar-sign"></i>
+                From
+            </p>
+
+            <div class="select-container">
+
+                <img
+                src="https://flagcdn.com/48x36/us.png">
+
+                <select name="from"></select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Swap Button -->
+
+        <div class="swap-btn">
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+        </div>
+
+
+        <!-- To -->
+
+        <div class="to">
+
+            <p>
+                <i class="fa-solid fa-earth-asia"></i>
+                To
+            </p>
+
+            <div class="select-container">
+
+                <img
+                src="https://flagcdn.com/48x36/in.png">
+
+                <select name="to"></select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Result Card -->
+
+    <div class="result-card">
+
+        <div class="msg">
+
+            1 USD = 95 INR
+
+        </div>
+
+        <div class="last-update">
+
+            Last Updated : --
+
+        </div>
+
+    </div>
+
+
+    <!-- Loading Spinner -->
+
+    <div class="loader hidden">
+
+        <i class="fa-solid fa-spinner fa-spin"></i>
+
+    </div>
+
+
+    <!-- Buttons -->
+
+    <div class="button-group">
+
+        <button class="exchange-btn">
+
+            Get Rate
+
+        </button>
+
+
+        <button class="copy-btn">
+
+            <i class="fa-regular fa-copy"></i>
+
+            Copy
+
+        </button>
+
+    </div>
+
+
+    <!-- Favorite Currencies -->
+
+    <div class="favorites">
+
+        <h3>Favorites</h3>
+
+        <div class="favorite-chips">
+
+            <button
+            class="fav-btn"
+            data-from="USD"
+            data-to="INR">
+
+                USD ↔ INR
+
+            </button>
+
+            <button
+            class="fav-btn"
+            data-from="EUR"
+            data-to="INR">
+
+                EUR ↔ INR
+
+            </button>
+
+            <button
+            class="fav-btn"
+            data-from="GBP"
+            data-to="INR">
+
+                GBP ↔ INR
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Chart -->
+
+    <div class="chart-container">
+
+        <h3>
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Exchange Rate Trend
+
+        </h3>
+
+        <canvas id="chart"></canvas>
+
+    </div>
+
+</div>
+
+
+<!-- JQuery -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<!-- Select2 -->
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+<!-- Chart.js -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- Country Codes -->
+
+<script src="codes.js"></script>
+
+
+<!-- Main JS -->
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
