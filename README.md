@@ -1,2 +1,2 @@
 # CURRENCY-CONVERTER
-🚀 Currency Converter Web App  Built a responsive Currency Converter using HTML, CSS, and JavaScript.  ✨ Features:  Real-time currency conversion 🌐 Country flags update 🇮🇳🇺🇸 Swap currencies 🔄 Dark/Light mode 🌙☀️ Live chart 📊  ⚙️ Tech: HTML | CSS | JS | API
+🚀 Currency Converter Web App <BR> Built a responsive Currency Converter using HTML, CSS, and JavaScript. <BR> ✨ Features:  Real-time currency conversion 🌐<BR> Country flags update 🇮🇳🇺🇸 Swap currencies 🔄 <BR>Dark/Light mode 🌙☀️<BR> Live chart 📊<BR>  ⚙️ Tech: HTML | CSS | JS | API
